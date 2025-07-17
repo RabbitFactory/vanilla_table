@@ -1,98 +1,103 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Formatted Table</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <input type="radio" name="scale" id="mm" value="mm" checked />
+    <div class="radio-box-container">
+      <div class="radio-container">
+      <input class="input" type="radio" name="scale" id="mm" value="mm" checked />
       <label for="mm">MM</label>
 
-      <input type="radio" name="scale" id="inch" value="inch" />
+      <input class="input" type="radio" name="scale" id="inch" value="inch" />
       <label for="inch">Inch</label>
 
-      <input type="radio" name="scale" id="kgsm" value="kgsm" />
+      <input class="input" type="radio" name="scale" id="kgsm" value="kgsm" />
       <label for="kgsm">KGS/M</label>
 
-      <input type="radio" name="scale" id="lbsft" value="lbsft" />
+      <input class="input" type="radio" name="scale" id="lbsft" value="lbsft" />
       <label for="lbsft">LBS/FT</label>
     </div>
+    </div>
 
-    <table class="styled-table">
-      <thead>
-        <tr>
-          <th>NB</th>
-          <th>DN</th>
-          <th>OD</th>
-          <th>5S/5</th>
-          <th>10S</th>
-          <th>10</th>
-          <th>20</th>
-          <th>30</th>
-          <th>40S</th>
-          <th>S</th>
-          <th>40</th>
-          <th>60</th>
-          <th>80S</th>
-          <th>XS</th>
-          <th>80</th>
-          <th>100</th>
-          <th>120</th>
-          <th>140</th>
-          <th>160</th>
-          <th>XXS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1/8</td>
-          <td>6</td>
-          <td data-mm="10.3">10.3</td>
-          <td></td>
-          <td data-mm="1.24">1.24</td>
-          <td data-mm="1.24">1.24</td>
-          <td></td>
-          <td data-mm="1.45">1.45</td>
-          <td data-mm="1.73">1.73</td>
-          <td data-mm="1.73">1.73</td>
-          <td data-mm="1.73">1.73</td>
-          <td></td>
-          
-          <td data-mm="2.41">2.41</td><!-- 25.3684/ -->
-          <td data-mm="2.41">2.41</td>
-          <td data-mm="2.41">2.41</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>1/4</td>
-          <td>6</td>
-          <td data-mm="13.7">13.7</td>
-          <td></td>
-          <td data-mm="1.65">1.65</td>
-          <td data-mm="1.65">1.65</td>
-          <td></td>
-          <td data-mm="1.45">1.45</td>
-          <td data-mm="1.73">1.73</td>
-          <td data-mm="1.73">1.73</td>
-          <td data-mm="1.73">1.73</td>
-          <td></td>
-          <td data-mm="2.41">2.41</td>
-          <td data-mm="2.41">2.41</td>
-          <td data-mm="2.41">2.41</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>NB</th>
+            <th>DN</th>
+            <th>OD</th>
+            <th>5S/5</th>
+            <th>10S</th>
+            <th>10</th>
+            <th>20</th>
+            <th>30</th>
+            <th>40S</th>
+            <th>S</th>
+            <th>40</th>
+            <th>60</th>
+            <th>80S</th>
+            <th>XS</th>
+            <th>80</th>
+            <th>100</th>
+            <th>120</th>
+            <th>140</th>
+            <th>160</th>
+            <th>XXS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1/8</td>
+            <td>6</td>
+            <td data-mm="10.3">10.3</td>
+            <td></td>
+            <td data-mm="1.24">1.24</td>
+            <td data-mm="1.24">1.24</td>
+            <td></td>
+            <td data-mm="1.45">1.45</td>
+            <td data-mm="1.73">1.73</td>
+            <td data-mm="1.73">1.73</td>
+            <td data-mm="1.73">1.73</td>
+            <td></td>
+
+            <td data-mm="2.41">2.41</td>
+            <!-- 25.3684/ -->
+            <td data-mm="2.41">2.41</td>
+            <td data-mm="2.41">2.41</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1/4</td>
+            <td>6</td>
+            <td data-mm="13.7">13.7</td>
+            <td></td>
+            <td data-mm="1.65">1.65</td>
+            <td data-mm="1.65">1.65</td>
+            <td></td>
+            <td data-mm="1.45">1.45</td>
+            <td data-mm="1.73">1.73</td>
+            <td data-mm="1.73">1.73</td>
+            <td data-mm="1.73">1.73</td>
+            <td></td>
+            <td data-mm="2.41">2.41</td>
+            <td data-mm="2.41">2.41</td>
+            <td data-mm="2.41">2.41</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <script src="app.js"></script>
   </body>
