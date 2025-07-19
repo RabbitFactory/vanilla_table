@@ -16,12 +16,12 @@ body {
   background-color: #f2f2f2;
 }
 .styled-table tr:first-child th {
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
   font-weight: bold;
 }
 .styled-table td:first-child,
 .styled-table th:first-child {
-  background-color: #e8e8e8;
+  background-color: rgba(209, 16, 209);
   font-weight: bold;
   position: sticky;
   left: 0;
@@ -30,12 +30,12 @@ body {
 .styled-table thead th {
   position: sticky;
   top: 0;
-  background-color: #f9f9f9;
-  z-index: 2;
+  background-color: rgb(51, 214, 255);
+  z-index: 4;
 }
 .table-container {
   width: 100%;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   -webkit-overflow-scrolling: touch;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .radio-box-container{
-   display: flex;
+  display: flex;
   justify-content: flex-end;
   width: 100%;
 }
@@ -70,4 +70,10 @@ body {
     min-width: 300px; /* or any width you want it to zoom to */
     font-size: 1rem; /* adjust font size as needed */
   }
+  .table-container {
+  overflow-x: auto;
+  overflow-y: auto;       /* enable vertical scrolling */
+  max-height: 70vh;       /* or fixed height like 300px */
+  -webkit-overflow-scrolling: touch;
+}
 }
